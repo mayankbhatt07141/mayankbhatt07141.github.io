@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My New Hugo Site</title>
+    <link>https://mayankbhatt07141.github.io/</link>
+    <description>Recent content on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://mayankbhatt07141.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>readme update</title>
+      <link>https://mayankbhatt07141.github.io/gitignored-refresh/</link>
+      <pubDate>Sat, 02 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://mayankbhatt07141.github.io/gitignored-refresh/</guid>
+      <description>you add all those files in .gitignore which we do not want git to track and sometimes you need to change the .gitignore file to not track/untrack some more files.
+So if you change the gitignore file and do git add then the changes will not effected and the files will be tracked/untracked.
+so there is the problem when we change(add or remove file) the gitignore later
+suppose you want to add a new file in gitignore which you not want to track, now when you do git add the file will be tracked beacause of the git cache, which needs to be cleared when any changes occours in the gitignore file.</description>
+    </item>
+    
+  </channel>
+</rss>
