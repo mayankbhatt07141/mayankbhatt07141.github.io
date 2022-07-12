@@ -1,3 +1,3 @@
 mayankbhatt07141.github.io
 
-Blogs
+This is the website where i update my notes
