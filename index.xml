@@ -7,6 +7,18 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://mayankbhatt07141.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Docker</title>
+      <link>https://mayankbhatt07141.github.io/docker/</link>
+      <pubDate>Sat, 02 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://mayankbhatt07141.github.io/docker/</guid>
+      <description>To install docker- https://docs.docker.com/engine/install/
+Images Images are blueprints for containers images are read only images contains
+Runtime environtment application code Any dependencies Extra configuration(e.g. env var.) etc. layers of images images are made up from several layers
+parent images: includes the os add sometimes the runtime environment(ex node) source code dependencies: A third party code/Software which our application depends upon run commands: these are the commands to run our application cmd to create image docker build --tag &amp;lt;name of image&amp;gt; .</description>
+    </item>
+    
+    <item>
       <title>readme update</title>
       <link>https://mayankbhatt07141.github.io/gitignored-refresh/</link>
       <pubDate>Sat, 02 Jul 2022 00:00:00 +0000</pubDate>

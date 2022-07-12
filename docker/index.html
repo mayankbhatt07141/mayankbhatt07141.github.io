@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+		
+		
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>Docker &middot; My New Hugo Site</title>
+
+		
+		<link rel="stylesheet" href="/css/style.css">
+		<link rel="stylesheet" href="/css/fonts.css">
+		
+		<link rel="icon" href="/favicon.ico"/>
+		<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+		
+		<link href="" rel="alternate" type="application/rss+xml" title="My New Hugo Site" />
+
+		<script src="/js/darkmode.js"></script>
+	</head>
+
+    <body>
+        		<nav class="nav">
+			<div class="nav-container">
+				<a href="/">
+					
+						<h2 class="nav-title">My New Hugo Site</h2>
+					
+				</a>
+				<ul>
+    
+    
+        <li>
+            <a href="/about/">
+                
+                <span>About</span>
+                
+            </a>
+        </li>
+    
+        <li>
+            <a href="/posts/">
+                
+                <span>Posts</span>
+                
+            </a>
+        </li>
+    
+</ul>
+			</div>
+		</nav>
+
+        <div id="darkModeToggle" onclick="toggleDarkMode()">
+  &#9680; 
+</div>
+
+        
+
+<main>
+	
+
+
+        <div class="post">
+		<div class="post-info">
+    <span>Written by</span>
+        Mayank bhatt
+        <br>
+        <span>on&nbsp;</span><time datetime="2022-07-02 00:00:00 &#43;0000 UTC">July 2, 2022</time>
+</div>
+
+		<h1 class="post-title">Docker</h1>
+<div class="post-line"></div>
+
+		
+
+		<p>To install docker- <a href="https://docs.docker.com/engine/install/">https://docs.docker.com/engine/install/</a></p>
+<h2 id="images">Images</h2>
+<p>Images are blueprints for containers
+images are read only
+images contains</p>
+<ol>
+<li>Runtime environtment</li>
+<li>application code</li>
+<li>Any dependencies</li>
+<li>Extra configuration(e.g. env var.)</li>
+<li>etc.</li>
+</ol>
+<h2 id="layers-of-images">layers of images</h2>
+<p>images are made up from several layers</p>
+<ol>
+<li>parent images: includes the os add sometimes the runtime environment(ex node)</li>
+<li>source code</li>
+<li>dependencies: A third party code/Software which our application depends upon</li>
+<li>run commands: these are the commands to run our application</li>
+</ol>
+<h3 id="cmd-to-create-image">cmd to create image</h3>
+<p><code>docker build --tag &lt;name of image&gt; .</code></p>
+<h3 id="command-to-delete-image">command to delete image</h3>
+<p><code>docker rmi &lt;image name or ID&gt;</code></p>
+<h4 id="list-all-the-images">list all the images</h4>
+<p><code>docker images</code></p>
+<h1 id="containers">Containers</h1>
+<p>containers are isolated Running instances of an image
+it runs our application</p>
+<h4 id="run-a-container">Run a container</h4>
+<p><code>docker run --&lt;name for container&gt; &lt;image name or Id&gt;</code></p>
+<p><code>docker run --&lt;name for container&gt; &lt;image name or Id&gt; -p 4000:4000</code></p>
+<p>here p is port and mapping port of host computer to docker container port</p>
+<h4 id="list-all-running-containers">list all running containers</h4>
+<p><code>docker ps</code></p>
+<h4 id="stop-a-container">stop a container</h4>
+<p><code>docker stop &lt;container Id&gt;</code></p>
+<h2 id="dockerfile">Dockerfile</h2>
+<p>Set of instruction to a docker to create the image and the docker file lists out all of these different layers or instructions to create those layers on image</p>
+<p>name of file&ndash; Dockerfile</p>
+<h2 id="docker-compose">Docker compose</h2>
+<p>Compose is a tool for defining and running multi-container Docker applications<br>
+compose uses YAML file to configure our application service<br>
+name of file - docker-compose.yml</p>
+<h4 id="compose-process">compose process</h4>
+<ol>
+<li>define apps <em>dockerfile</em> so it will be reproduce from everywhere</li>
+<li>Define compose file <em>docker-compose.yml</em> so that all the containers can be run in isolated environment</li>
+<li>do <code>docker-compose up</code> this aggrigrates the output form each container</li>
+</ol>
+<h4 id="stop-the-container">stop the container</h4>
+<p><code>docker-compose down</code><br>
+it stop the container and delete the cotainer but the image and the volumes are still reamaing</p>
+<p><code>docker-compose down --rmi all -v</code><br>
+it removes images and volumes also.</p>
+
+
+		
+	</div>
+
+	<div class="pagination">
+		<a href="/gitignored-refresh/" class="left arrow">&#8592;</a>
+
+		<a href="#" class="top">Top</a>
+	</div>
+</main>
+
+
+        		<footer>
+			
+			<span>
+			&copy; <time datetime="2022-07-12 15:44:18.969675805 &#43;0530 IST m=&#43;0.542710245">2022</time> . Made with <a href='https://gohugo.io'>Hugo</a> using the <a href='https://github.com/EmielH/tale-hugo/'>Tale</a> theme.
+			</span>
+		</footer>
+
+    </body>
+</html>
